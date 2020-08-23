@@ -1,18 +1,17 @@
+/* Body background and font */
 body {
   background: #272343;
-  font-family: 'Pacifico', 'cursive';
+  font-family: 'Pacifico', cursive;
 }
 
+/* Main heading */
 .heading {
   color: #bae8e8;
 }
 
-.row {
-  width: 100%;
-}
-
+/* Countdown timer */
 .timer {
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   width: 20rem;
   height: 20rem;
@@ -23,6 +22,16 @@ body {
   align-items: center;
 }
 
+.row {
+  width: 100%;
+}
+
+/* remove the padding on the play button */
+.btn {
+  padding: 0;
+}
+
+/* play and reset icons */
 .fa-play,
 .fa-redo-alt {
   color: #e3f6f5;
@@ -37,6 +46,8 @@ body {
   transition: 0.3s ease;
 }
 
+/* Dynamic class */
+/* Make the message visible */
 .show_message {
   display: block;
   padding: 1rem 0;

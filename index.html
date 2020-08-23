@@ -15,11 +15,11 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <!-- JS -->
+    <!-- My JS -->
     <script src="main.js"></script>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../resources/styles.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/996973c893.js"></script>
@@ -30,12 +30,12 @@
       rel="stylesheet"
     />
 
-    <title>Pomodoro Clock</title>
+    <title>Relógio Pomodoro</title>
   </head>
   <body onload="template()">
     <div class="container">
       <!-- Heading -->
-      <h1 class="text-center my-5 heading">Pomodoro Clock</h1>
+      <h1 class="text-center my-5 heading">DB's Pomodoro Clock</h1>
 
       <!-- Main Timer -->
       <div class="container timer">
@@ -52,16 +52,14 @@
         </div>
       </div>
 
-      <div>
-        <h3 id="done" class="text-center my-5"></h3>
+      <!-- Finished Message -->
+      <div class="my-5">
+        <h3 id="done" class="text-center"></h3>
       </div>
 
-      <!-- Start and Reset buttons-->
-
-      <div
-        class="container d-flex justify-content-center align-items-center my-5"
-      >
-        <button class="btn" onclick="start()">
+      <!-- Start Button and reset button-->
+      <div class="conatiner d-flex justify-content-center my-5">
+        <button class="btn" onclick="start_timer()">
           <i class="fas fa-play fa-2x"></i>
         </button>
         <a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>
